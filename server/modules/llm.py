@@ -1,5 +1,6 @@
-from langchain.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnableLambda
 from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
@@ -7,6 +8,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+def _format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
 
 def get_llm_chain(retriever):
     llm = ChatGroq(
@@ -40,10 +44,12 @@ Your job is to provide clear, accurate, and helpful responses based **only on th
 """
     )
 
-    return RetrievalQA.from_chain_type(
-        llm=llm,
-        chain_type="stuff",
-        retriever=retriever,
-        chain_type_kwargs={"prompt": prompt},
-        return_source_documents=True
-    )
+    answer_chain = prompt | llm | StrOutputParser()
+
+    def _run(inputs):
+        question = inputs["query"]
+        docs = retriever.invoke(question)
+        answer = answer_chain.invoke({"context": _format_docs(docs), "question": question})
+        return {"result": answer, "source_documents": docs}
+
+    return RunnableLambda(_run)

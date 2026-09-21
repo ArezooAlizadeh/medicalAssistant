@@ -7,6 +7,49 @@ from pinecone import Pinecone, ServerlessSpec
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from google.genai.errors import ClientError
+
+# Google's free-tier embedding quota is a hard 100 requests/minute, metered
+# per individual text embedded (not per API call) - a single batch call
+# embedding 90 texts counts as 90 against the quota. We track how many texts
+# we've submitted in the last 60s and pause before submitting more than a
+# safety margin under that cap.
+EMBED_BATCH_SIZE = 25
+MAX_TEXTS_PER_MINUTE = 90
+RATE_LIMIT_RETRY_SECONDS = 60
+MAX_RATE_LIMIT_RETRIES = 5
+
+_request_log = []  # list of (timestamp, text_count)
+
+
+def _wait_for_rate_limit_capacity(batch_size):
+    now = time.monotonic()
+    _request_log[:] = [(t, c) for t, c in _request_log if now - t < 60]
+    while sum(c for _, c in _request_log) + batch_size > MAX_TEXTS_PER_MINUTE:
+        sleep_time = 60 - (now - _request_log[0][0]) + 1
+        print(f"⏳ Approaching rate limit, waiting {sleep_time:.0f}s...")
+        time.sleep(max(sleep_time, 0))
+        now = time.monotonic()
+        _request_log[:] = [(t, c) for t, c in _request_log if now - t < 60]
+
+
+def _embed_documents_rate_limited(embed_model, texts):
+    embeddings = []
+    for i in range(0, len(texts), EMBED_BATCH_SIZE):
+        batch = texts[i:i + EMBED_BATCH_SIZE]
+        for attempt in range(MAX_RATE_LIMIT_RETRIES):
+            _wait_for_rate_limit_capacity(len(batch))
+            try:
+                embeddings.extend(embed_model.embed_documents(batch))
+                _request_log.append((time.monotonic(), len(batch)))
+                break
+            except ClientError as e:
+                if e.code == 429 and attempt < MAX_RATE_LIMIT_RETRIES - 1:
+                    print(f"⏳ Rate limited, waiting {RATE_LIMIT_RETRY_SECONDS}s before retrying batch...")
+                    time.sleep(RATE_LIMIT_RETRY_SECONDS)
+                else:
+                    raise
+    return embeddings
 
 load_dotenv()
 
@@ -43,7 +86,7 @@ index=pc.Index(PINECONE_INDEX_NAME)
 # load,split,embed and upsert pdf docs content
 
 def load_vectorstore(uploaded_files):
-    embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embed_model = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001", output_dimensionality=768)
     file_paths = []
 
     for file in uploaded_files:
@@ -60,11 +103,11 @@ def load_vectorstore(uploaded_files):
         chunks = splitter.split_documents(documents)
 
         texts = [chunk.page_content for chunk in chunks]
-        metadatas = [chunk.metadata for chunk in chunks]
+        metadatas = [{**chunk.metadata, "text": chunk.page_content} for chunk in chunks]
         ids = [f"{Path(file_path).stem}-{i}" for i in range(len(chunks))]
 
         print(f"🔍 Embedding {len(texts)} chunks...")
-        embeddings = embed_model.embed_documents(texts)
+        embeddings = _embed_documents_rate_limited(embed_model, texts)
 
         print("📤 Uploading to Pinecone...")
         with tqdm(total=len(embeddings), desc="Upserting to Pinecone") as progress:

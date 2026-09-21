@@ -15,7 +15,7 @@ def _format_docs(docs):
 def get_llm_chain(retriever):
     llm = ChatGroq(
         groq_api_key=GROQ_API_KEY,
-        model_name="llama3-70b-8192"
+        model_name="openai/gpt-oss-120b"
     )
 
     prompt = PromptTemplate(

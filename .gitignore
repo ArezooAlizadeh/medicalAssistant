@@ -1,4 +1,22 @@
-.venv
-/server/.env
-__pycache__
+# Python virtual environments
+.venv/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# macOS generated files
+.DS_Store
+
+# Local test file
 test.py
+
+# Private project notes
+medical_assistant_project_notes.docx
+
+# Runtime uploaded documents
+server/uploaded_docs/

@@ -12,7 +12,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 def _format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
-def get_llm_chain(retriever):
+def get_llm_chain():
     llm = ChatGroq(
         groq_api_key=GROQ_API_KEY,
         model_name="openai/gpt-oss-120b"
@@ -48,7 +48,7 @@ Your job is to provide clear, accurate, and helpful responses based **only on th
 
     def _run(inputs):
         question = inputs["query"]
-        docs = retriever.invoke(question)
+        docs = inputs["documents"]
         answer = answer_chain.invoke({"context": _format_docs(docs), "question": question})
         return {"result": answer, "source_documents": docs}
 

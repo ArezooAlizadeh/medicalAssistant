@@ -1,0 +1,716 @@
+[
+  {
+    "text": "1. What is neuroscience:  \n🎯 theme: what is brain, neuron, ac5on poten5al, synapses  \nScale of neuroscience data: \nElectrophysiology (explain shortly your project), ECoG (explain your project), EEG, MEG, \nfMRI (explain your MSC thesis), optogene5cs, … \nWho can study neuroscience: mathema5cs, physics, biology, MD, Biomedical Engineer, \nComputer Scien5st \nMen5on some companies like: Illon Musck, amazon, meta, facebook \nVersion 3 \nPodcast Script (Conversa5onal + Scien5ﬁc Depth) \nIntro",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 0,
+      "page_label": "1"
+    }
+  },
+  {
+    "text": "Intro \nHey everyone, welcome I’m Arezoo. I have PhD in neuroscience, and right now I’m a postdoc \nin computa>onal neuroscience at the Donders Ins>tute in the Netherlands. I spend most of \nmy >me trying to understand the brain func>on. \nToday, I’ll introduce the clever tools neuroscien>sts use to study it. \n \nWhat is the Brain? \n \nOkay, let’s start simple: the brain is your body’s boss — the control center. Without \nit, nothing works.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 0,
+      "page_label": "1"
+    }
+  },
+  {
+    "text": "it, nothing works. \nThe brain is made of special cells called neurons. Neurons are tiny messengers \nthat constantly send signals to each other to create everything you think, feel, and \ndo. \nNeuroscientists use different methods to study how these little neurons talk to one \nanother. Some of these methods are non-invasive (they look at the brain from the \noutside), and some are invasive (they work directly inside the brain). \n🧠 The Non-invasive Club (No Drills Required)",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 0,
+      "page_label": "1"
+    }
+  },
+  {
+    "text": "🧠 The Non-invasive Club (No Drills Required) \n• EEG (Electroencephalography) \nThis one is like puDng microphones outside a stadium to hear the crowd chan>ng. \nYou don’t know exactly who is yelling, but you know the rhythm of the cheers. \nScien>ﬁcally, those “chants” are the combined electrical spikes of thousands or \nmillions of neurons near the surface of your brain. When lots of neurons ﬁre \ntogether, their liLle voltages add up, and EEG picks up that “electrical chaLer”",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 0,
+      "page_label": "1"
+    }
+  },
+  {
+    "text": "through sensors on your scalp. \n• MEG (Magnetoencephalography) \nIf EEG listens to the stadium noise, MEG measures the >ny magne5c ﬁelds created \nwhenever neurons ﬁre. You may remember from physics: whenever electricity ﬂows,",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 0,
+      "page_label": "1"
+    }
+  },
+  {
+    "text": "it creates a magne>c ﬁeld. Neurons are no diﬀerent! So MEG uses insanely sensi>ve \ndetectors called SQUIDs (yes, like the sea creature \n🦑) to pick up these >ny magne>c \nripples in your head. \n• fMRI (Func5onal Magne5c Resonance Imaging) \nThis one is the star of science documentaries. Those colorful brain scans? That’s fMRI. \nBut fun fact—it doesn’t actually measure neurons. Instead, it looks at blood. When \nneurons in one region ﬁre a lot, they need more oxygen to recharge. Blood vessels",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 1,
+      "page_label": "2"
+    }
+  },
+  {
+    "text": "open up, oxygen-rich blood ﬂows in, and fMRI measures those changes by detec>ng \nthe oxygen levels in hemoglobin (the stuﬀ that carries oxygen). So when you see a \nbrain scan “light up,” what you’re really seeing is the plumbing system delivering \noxygen where neurons are hungriest. \n• PET (Positron Emission Tomography) \nThis one is slower but useful. Scien>sts inject a >ny radioac>ve tracer into the \nbloodstream. Instead of saying the brain “gobbles up” the tracer, think of it like",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 1,
+      "page_label": "2"
+    }
+  },
+  {
+    "text": "soaking it up like a sponge. The busiest brain regions absorb more tracer, and the PET \nscanner detects the liLle par>cles (positrons) that are released. The result? A heat \nmap of which areas are burning the most energy. \n• MRS (Magne5c Resonance Spectroscopy) \nIf fMRI is like watching which oﬃce in a company is busy, MRS is like actually opening \nthe coﬀee machine to measure how much coﬀee is le_. Scien>ﬁcally, MRS detects",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 1,
+      "page_label": "2"
+    }
+  },
+  {
+    "text": "the magne5c signature of speciﬁc molecules—like glutamate or GABA—by tuning \nthe scanner to diﬀerent frequencies. Each chemical resonates slightly diﬀerently, so \nscien>sts can ﬁgure out the brain’s “chemical recipe” in a given area. \n• Connectomics / Tractography \nThis is Google Maps for the brain. But how do we actually map it? Using a special \ntype of MRI called diﬀusion tensor imaging. It measures how water moves inside the",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 1,
+      "page_label": "2"
+    }
+  },
+  {
+    "text": "brain. Water ﬂows more easily along axon “highways” than across them, so the \nscanner traces out the direc>on of all those ﬁbers. Put it together, and you get a 3D \nbrain map showing how neighborhoods are wired together . \n• TMS & tDCS \nThese are like “brain hacks.” \n• TMS (Transcranial Magne5c S5mula5on): Uses powerful magne>c pulses to create \n>ny electric currents inside the brain. That current can brieﬂy turn an area on or oﬀ—",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 1,
+      "page_label": "2"
+    }
+  },
+  {
+    "text": "like pressing pause on part of your brain. It’s even used in clinics for trea>ng \ndepression. \n• tDCS (Transcranial Direct Current S5mula5on): Yes, this one really is electricity, but \nit’s super mild—just a gentle current ﬂowing between two electrodes on your scalp. It \ndoesn’t make neurons ﬁre directly. Instead, it shi_s their voltage just a liLle, making \nthem more or less likely to ﬁre when they get input. Think of it as nudging the brain’s",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 1,
+      "page_label": "2"
+    }
+  },
+  {
+    "text": "balance point so neurons are more “ready to talk.” \n🧠 The Invasive Club (Handle With Care)",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 1,
+      "page_label": "2"
+    }
+  },
+  {
+    "text": "• ECoG (Electrocor5cography) \nThis is like puDng microphones inside the stadium, directly on the ﬁeld, instead of \noutside the walls. Scien>ﬁcally, it means placing electrodes directly on the brain’s \nsurface during surgery. This gives a super clear signal of local brain ac>vity. \n👉 Personal note: during my ﬁrst year of PhD, I worked with ECoG recordings from \npa>ents during brain surgery. I had to manage the recording system, coordinate with",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 2,
+      "page_label": "3"
+    }
+  },
+  {
+    "text": "neurosurgeons, and interact with pa>ents—all in the surgical room. It was exci>ng, \nbut also one of the most stressful jobs I’ve ever done. Imagine trying to debug a \nrecording machine while standing next to an open brain! \n• Single-Cell Recording \nThis zooms all the way in to listen to just one neuron. Scien>sts insert a very ﬁne \nelectrode near or inside a neuron, and it picks up the individual spikes. It’s like tuning",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 2,
+      "page_label": "3"
+    }
+  },
+  {
+    "text": "into a single violinist in a massive orchestra. The detail is incredible—you can literally \nsee how one cell responds to a picture, a sound, or even a memory. But you can only \ndo this in very small brain areas at a >me. \n• Calcium Imaging / Voltage Imaging \nHere’s where it gets really sci-ﬁ. Neurons rely on calcium and voltage changes when \nthey ﬁre. So scien>sts use special dyes or gene>cally engineered proteins that glow",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 2,
+      "page_label": "3"
+    }
+  },
+  {
+    "text": "whenever calcium enters a neuron (which happens during spikes). Under a \nmicroscope, thousands of neurons light up like twinkling stars as they talk to each \nother . Voltage imaging is similar but tracks the actual electrical changes directly. \nThese techniques let us watch whole neural networks in ac>on, almost like seeing \nthoughts sparkle in real >me. \n• Optogene5cs \nAnd then there’s the superstar method: optogene>cs. Here, scien>sts give neurons",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 2,
+      "page_label": "3"
+    }
+  },
+  {
+    "text": "special proteins that respond to light. Then they shine a laser, and—zap!—the neuron \nﬁres. It’s like giving your brain a remote control. Scien>sts can turn on or oﬀ very \nspeciﬁc cells and see how it changes behavior in animals. Honestly, it’s like science \nﬁc>on made real. \n \nWhy So Many Methods? \nBecause no single tool tells the whole story. EEG is fast but blurry. fMRI is detailed but slow. \nSingle-cell recording is precise but >ny in scope. That’s why neuroscien>sts o_en combine",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 2,
+      "page_label": "3"
+    }
+  },
+  {
+    "text": "methods—like pairing EEG with fMRI to get both speed and detail. It’s like watching a \nfootball game from both the blimp camera and the player’s GoPro. \nAnd that’s the beauty of neuroscience: every tool gives us a diﬀerent perspec>ve, and when \nwe combine them, we get a richer picture of how the brain works—spikes, blood, chemicals, \nwiring, and all. \nSo there you have it—an en>re toolbox of ways scien>sts peek inside the brain. From",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 2,
+      "page_label": "3"
+    }
+  },
+  {
+    "text": "microphones on the scalp (EEG) to glowing neurons under microscopes (calcium imaging), to \nliteral brain “Google Maps” (connectomics). Each one gives us a diﬀerent perspec>ve, like \nswitching camera angles in a movie. \nAnd yes—some>mes it’s glamorous fMRI scans with colorful blobs… and some>mes it’s me, \nsweaty and stressed in a surgical room during my PhD, making sure the recording system",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 2,
+      "page_label": "3"
+    }
+  },
+  {
+    "text": "doesn’t crash while a neurosurgeon is wai>ng. Science is not always >dy—but it’s always \nfascina>ng. \nIf your brain feels a bit overloaded right now—don’t worry. That just means your neurons \nhave been ﬁring, passing spikes, changing voltages, and maybe even ligh>ng up a few \nnetworks. Basically, you just got a >ny “brain workout.” \n🧠\n💪 \nThanks for joining me on this journey through the brain’s detec>ve tools. In the next episode, \nwe’ll dive into [",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 3,
+      "page_label": "4"
+    }
+  },
+  {
+    "text": "we’ll dive into [\n👉 here you can tease the next topic, e.g., how the brain rewires itself \nthrough neuroplas2city, and why that means you really can teach an old brain new tricks!]. \nUn>l then, take care of your neurons… they’re working 24/7, even while you sleep. \nAnd remember: your brain is electric, magne>c, chemical, and a liLle bit magical. \nSee you next >me!",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 3,
+      "page_label": "4"
+    }
+  },
+  {
+    "text": "Who can study neuroscience:  \nAs I talk with people I see that how much they are interested in knowing neuroscience. So, I think if \nwe really want to get knowledge in every ﬁeld and if we spend enough >me we can educate ourself \nin that ﬁeld. There are many books and online courses like Coursera, and podcast (type: like the \nfamous one is Huberman), you can follow and educate yourself about brain since by understanding",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 4,
+      "page_label": "5"
+    }
+  },
+  {
+    "text": "how the brain which is our control system works, I believe it helps to more control behavior .  \nBut in order to dive deep into the neuroscience and it really interes>ng for you to get scien>st in this \nﬁeld, you can follow neuroscience as an educa >on in the university. Sine neuroscience is very \ninterdisciplinary science, I have seen people coming from diﬀerent educa>onal background to study \nneuroscience.  \n🎙 Podcast Script – A Journey Through Neuroscience (with career paths)",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 4,
+      "page_label": "5"
+    }
+  },
+  {
+    "text": "Hello everyone, and welcome! \nToday, I want to take you on a journey through neuroscience — from the >niest molecules \ninside our brain cells to the biggest ques>ons about mind, behavior, and society. Along the \nway, I’ll also share what kinds of people and backgrounds usually contribute to each ﬁeld. \nLet’s start small. \nAt the founda>on, we have molecular and cellular neuroscience. This is where scien>sts \nstudy the building blocks of the brain: genes, proteins, neurotransmiLers, and single",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 4,
+      "page_label": "5"
+    }
+  },
+  {
+    "text": "neurons. Biologists, chemists, gene>cists, and biomedical engineers o_en work here — \nanyone with training in life sciences at the microscopic level. \nZooming out, we reach systems neuroscience. Here we look at groups of neurons forming \ncircuits that control vision, movement, sleep, or memory. This area a Lracts physiologists, \nneurologists, psychologists, and engineers who design experiments to map brain systems.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 4,
+      "page_label": "5"
+    }
+  },
+  {
+    "text": "Next comes cogni5ve and behavioral neuroscience. This ﬁeld connects brain ac>vity to \nthoughts, memories, language, emo>ons, and decision-making. People with backgrounds in \npsychology, cogni>ve science, linguis>cs, and educa>on o_en contribute, some>mes \nalongside neuroscien>sts and clinicians. \nTo handle the brain’s complexity, we need models — and that’s the role of computa5onal \nand theore5cal neuroscience. Mathema>cians, physicists, computer scien>sts, and AI",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 4,
+      "page_label": "5"
+    }
+  },
+  {
+    "text": "researchers o_en join forces here to simulate how networks of neurons work. \nThen we have neuroinforma5cs, which manages massive amounts of data from brain scans, \ngene>cs, and physiology. Data scien>sts, so_ware developers, and informa>on engineers \no_en specialize here, helping to build brain atlases and databases. \nFrom here, we step into the clinic with transla5onal and clinical neuroscience. Doctors, \npsychiatrists, neurologists, and pharmacologists all work to turn lab discoveries into",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 4,
+      "page_label": "5"
+    }
+  },
+  {
+    "text": "treatments for condi>ons like Alzheimer’s, Parkinson’s, and depression. \nBut the brain is not sta>c — it grows and adapts. Developmental neuroscience studies how \nthe brain forms in embryos, how children’s brains wire themselves, and how aging a ﬀects",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 4,
+      "page_label": "5"
+    }
+  },
+  {
+    "text": "memory and learning. This ﬁeld includes developmental psychologists, pediatricians, and \nmolecular biologists. \nNow comes neuroengineering and neurotechnology, where science meets tools. Engineers, \nrobo>cists, and physicists work on brain-computer interfaces, neuroprosthe>cs, and implants \nthat restore sight or movement. \nAnother major branch is neuropharmacology, which focuses on how drugs a ﬀect brain \nfunc>on. Pharmacologists, chemists, and clinicians explore medicines that alter",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 5,
+      "page_label": "6"
+    }
+  },
+  {
+    "text": "neurotransmiLers, from an>depressants to anesthe>cs. \nOf course, the brain is also social. Social and aﬀec5ve neuroscience explores empathy, love, \ntrust, and moral decisions. Here you’ll o _en ﬁnd psychologists, sociologists, and \nneuroscien>sts working together . \nAnd ﬁnally, we reach neuroethics and philosophy of mind  — the broadest layer . \nPhilosophers, ethicists, legal scholars, and neuroscien>sts ask the big ques>ons: What does it",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 5,
+      "page_label": "6"
+    }
+  },
+  {
+    "text": "mean if brain scans can reveal private thoughts? Do we really have free will if our brain \nmakes choices before we’re aware? \nSo, from molecules to mind, from neurons to society, neuroscience is a journey across many \nscales — and it’s also a mee>ng point of many disciplines. Whether you come from biology, \npsychology, computer science, engineering, or philosophy, there’s a place for you in \nneuroscience.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 5,
+      "page_label": "6"
+    }
+  },
+  {
+    "text": "Supplementary \nI would like to men>on which ﬁeld are in neuroscience and what educa>onal background  \nCore Fields in Neuroscience \n• Molecular & Cellular Neuroscience \no Focus: genes, proteins, neurotransmiLers, receptors \no Experts: molecular biologists, biochemists, gene>cists \noStudies the brain at its smallest building blocks: genes, proteins, and individual \nneurons. \noExample: how a neurotransmiLer like dopamine is released and received, or",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 6,
+      "page_label": "7"
+    }
+  },
+  {
+    "text": "how muta>ons in a single gene can lead to brain disorders. \no\n• Systems Neuroscience \no Focus: neural circuits, brain regions, sensory/motor systems \no Experts: neurophysiologists, electrophysiologists, anatomists \no Looks at how groups of neurons form circuits and brain regions that control \nfunc>ons like movement, vision, or sleep. \no Example: mapping how the visual system takes signals from the eye and \nprocesses them into what we “see.” \n• Cogni5ve & Behavioral Neuroscience",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 6,
+      "page_label": "7"
+    }
+  },
+  {
+    "text": "• Cogni5ve & Behavioral Neuroscience \no Focus: percep>on, memory, learning, decision-making, emo>ons \no Experts: psychologists, cogni>ve scien>sts, linguists \noExplores how the brain produces thought and behavior. Covers learning, \nmemory, language, decision-making, and emo>ons. \noExample: studying how the hippocampus helps form new memories, or how \nstress changes decision-making. \n• Computa5onal & Theore5cal Neuroscience \no Focus: mathema>cal models, neural networks, brain simula>ons",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 6,
+      "page_label": "7"
+    }
+  },
+  {
+    "text": "o Experts: mathema>cians, physicists, computer scien>sts, engineers \noUses math and computer models to simulate how neurons and brain \nnetworks work. Also inspires ar>ﬁcial intelligence. \noExample: building models of how a neural network recognizes faces, or \npredic>ng how seizures spread in epilepsy. \n• Neuroinforma5cs & Data Science",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 6,
+      "page_label": "7"
+    }
+  },
+  {
+    "text": "o Focus: big brain data, AI/ML for brain research, brain atlases \no Experts: data scien>sts, so_ware engineers, bioinforma>cians \noManages and analyzes the huge amount of brain data from imaging, gene>cs, \nand electrophysiology. \noExample: brain atlases like the Human Connectome Project, or using machine \nlearning to ﬁnd paLerns in brain scans. \n• Clinical & Transla5onal Neuroscience \no Focus: neurological and psychiatric disorders, brain injuries, therapies",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 7,
+      "page_label": "8"
+    }
+  },
+  {
+    "text": "o Experts: neurologists, psychiatrists, neurosurgeons, clinicians \noBridges basic science and medicine. Studies brain diseases (Alzheimer’s, \nParkinson’s, depression, epilepsy) and develops treatments. \noExample: tes>ng deep brain s>mula>on (DBS) for Parkinson’s pa>ents. \n• Developmental Neuroscience \no Focus: how the brain develops from embryo to adulthood \no Experts: developmental biologists, embryologists, pediatric neurologists",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 7,
+      "page_label": "8"
+    }
+  },
+  {
+    "text": "oFocuses on how the nervous system develops from embryo to adulthood, and \nhow it changes with age. \noExample: how newborns form synapses rapidly, or how early-life trauma \naﬀects brain development. \n• Neuroengineering & Neurotechnology \no Focus: brain-computer interfaces, neuroprosthe>cs, neuromodula>on (TMS, \nDBS) \no Experts: biomedical engineers, electrical engineers, robo>cs experts \no Designs tools to interact with or repair the brain. Includes brain-computer",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 7,
+      "page_label": "8"
+    }
+  },
+  {
+    "text": "interfaces (BCIs), neuroprosthe>cs, and s>mula>on methods. \no Example: allowing a paralyzed person to move a robo>c arm using their \nthoughts. \n• Neuropharmacology \no Focus: how drugs aﬀect the nervous system \no Experts: pharmacologists, chemists, toxicologists \noStudies how drugs and chemicals aﬀect brain func>on and behavior . Crucial \nfor developing psychiatric and neurological medicines. \noExample: how an>depressants change serotonin levels, or how anesthe>cs \nshut down consciousness.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 7,
+      "page_label": "8"
+    }
+  },
+  {
+    "text": "shut down consciousness. \n• Social & Aﬀec5ve Neuroscience \no Focus: empathy, social behavior, emo>onal processing \no Experts: psychologists, anthropologists, behavioral economists \noExamines how the brain processes emo>ons, social interac>ons, empathy, and \nmoral decisions.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 7,
+      "page_label": "8"
+    }
+  },
+  {
+    "text": "oExample: using fMRI to see how the brain responds to seeing a loved one in \npain. \n• Neuroethics & Philosophy of Mind \no Focus: consciousness, free will, ethical use of brain technology \no Experts: philosophers, ethicists, legal scholars \noExplores the ethical, social, and philosophical implica>ons of neuroscience. \nDeals with ques>ons of free will, iden>ty, and consciousness. \noExample: should brain scans be used in courtrooms? Or: is consciousness just \nbrain ac>vity, or something beyond?",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 8,
+      "page_label": "9"
+    }
+  },
+  {
+    "text": "brain ac>vity, or something beyond? \nOther Disciplines Feeding into Neuroscience \n• Physics → MRI, MEG, optics, computational models \n• Mathema5cs & Sta5s5cs → modeling, signal processing, AI/ML \n• Chemistry → neurotransmitters, molecular probes, drug design \n• Engineering → neural implants, prosthetics, stimulation devices \n• Computer Science → brain-inspired AI, connectomics, simulations \n• Psychology → cognition, behavior, mental health \n• Medicine → neurology, psychiatry, neurosurgery",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 8,
+      "page_label": "9"
+    }
+  },
+  {
+    "text": "• Medicine → neurology, psychiatry, neurosurgery \n• Biology → genetics, cell biology, physiology \n• Linguis5cs → language and brain studies \n• Philosophy → consciousness, mind–brain relationship \n• Economics & Sociology → decision-making, collective behavior \n1) Molecular & Cellular Neuroscience \nVisual concept: \n• Close-up of neurons with glowing synapses and neurotransmitters. \n• DNA strands and molecular structures floating in the background.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 8,
+      "page_label": "9"
+    }
+  },
+  {
+    "text": "• Stylized cellular environment showing dendrites, axons, and synaptic connections. \n \n2) Systems Neuroscience",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 8,
+      "page_label": "9"
+    }
+  },
+  {
+    "text": "Visual concept: \n• Diagram of interconnected brain regions (cortex, hippocampus, cerebellum). \n• Highlighted sensory and motor pathways with firing neurons. \n• Overlay of a brain map showing circuits and connectivity. \n \n3) Cognitive & Behavioral Neuroscience \nVisual concept: \n• Human silhouette with brain regions glowing related to memory, decision-making, and \nlanguage. \n• Thought bubbles representing memory, choices, and language symbols.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 9,
+      "page_label": "10"
+    }
+  },
+  {
+    "text": "• Possibly a split view showing experimental setup with cognitive tasks. \n \n4) Computational & Theoretical Neuroscience \nVisual concept: \n• Brain overlaid with mathematical formulas, graphs, and neural network schematics. \n• AI-inspired neuron patterns, simulation grids, and model visualizations. \n• Abstract tech-meets-biology theme. \n \n5) Neuroinformatics & Data Science \nVisual concept: \n• Screens filled with brain atlases, 3D brain maps, and neural network datasets.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 9,
+      "page_label": "10"
+    }
+  },
+  {
+    "text": "• Researchers working with code or large monitors analyzing brain data. \n• Data flowing from brain imaging into algorithms. \n \n6) Translational & Clinical Neuroscience \nVisual concept: \n• Lab research on one side, patient treatment (hospital/clinic) on the other. \n• Scientists and clinicians collaborating, connecting lab discoveries to therapies. \n• Highlight drugs, MRI scans, or brain stimulation devices. \n \n7) Developmental Neuroscience \nVisual concept:",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 9,
+      "page_label": "10"
+    }
+  },
+  {
+    "text": "7) Developmental Neuroscience \nVisual concept: \n• Growing brain stages from embryo → child → adult. \n• Highlight critical periods and neural plasticity with glowing connections forming over \ntime.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 9,
+      "page_label": "10"
+    }
+  },
+  {
+    "text": "• Playful, educational tone emphasizing brain growth and development. \n \n8) Neuroengineering & Neurotechnology \nVisual concept: \n• Brain-computer interfaces, robotic prosthetics, and electrode implants. \n• Engineers adjusting devices connected to a neural model. \n• Futuristic lab environment showing neurotechnology in action. \n \n9) Neuropharmacology \nVisual concept: \n• Molecules binding to neurotransmitter receptors on neurons.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 10,
+      "page_label": "11"
+    }
+  },
+  {
+    "text": "• Pills or drug compounds transforming into neural activity illustrations. \n• Clinicians or chemists in lab coats analyzing effects on neural circuits. \n \n10) Social & Affective Neuroscience \nVisual concept: \n• Two or more human faces with emotional expressions. \n• Glowing neural circuits showing empathy, social interaction, and emotion processing. \n• Overlay of brain activity related to social cognition (e.g., mirror neurons). \n \n11) Neuroethics & Philosophy \nVisual concept:",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 10,
+      "page_label": "11"
+    }
+  },
+  {
+    "text": "11) Neuroethics & Philosophy \nVisual concept: \n• Human brain overlaid with abstract questions like free will, privacy, responsibility. \n• Philosophers and neuroscientists in discussion or pondering ethics. \n• Thoughtful, contemplative atmosphere with symbolic scales or glowing brain-tech \nicons.",
+    "metadata": {
+      "producer": "macOS Version 26.6.2 (Build 25G83) Quartz PDFContext",
+      "creator": "Pages",
+      "creationdate": "D:20260929084846Z00'00'",
+      "moddate": "D:20260929084846Z00'00'",
+      "title": "What is Neuroscience",
+      "source": "uploaded_docs/What is Neuroscience.pdf",
+      "total_pages": 11,
+      "page": 10,
+      "page_label": "11"
+    }
+  }
+]

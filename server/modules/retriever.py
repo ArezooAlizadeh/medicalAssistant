@@ -1,5 +1,4 @@
 import os
-
 from pinecone import Pinecone
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_core.documents import Document
@@ -19,7 +18,7 @@ def retrieve_documents(question: str):
 
     results = index.query(
         vector=embedded_query,
-        top_k=3,
+        top_k=10,
         include_metadata=True
     )
 

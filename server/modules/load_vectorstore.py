@@ -8,7 +8,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from google.genai.errors import ClientError
-
+import json
 # Google's free-tier embedding quota is a hard 100 requests/minute, metered
 # per individual text embedded (not per API call) - a single batch call
 # embedding 90 texts counts as 90 against the quota. We track how many texts
@@ -61,6 +61,7 @@ PINECONE_INDEX_NAME="medicalindex"
 os.environ["GOOGLE_API_KEY"]=GOOGLE_API_KEY
 
 UPLOAD_DIR="./uploaded_docs"
+BM25_DATA_PATH = "./bm25_chunks.json"
 os.makedirs(UPLOAD_DIR,exist_ok=True)
 
 
@@ -102,6 +103,30 @@ def load_vectorstore(uploaded_files):
         splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
         chunks = splitter.split_documents(documents)
 
+        new_bm25_chunks = [
+        {
+        "text": chunk.page_content,
+        "metadata": chunk.metadata
+        }
+        for chunk in chunks]
+
+        if os.path.exists(BM25_DATA_PATH):
+            with open(BM25_DATA_PATH, "r", encoding="utf-8") as f:
+                existing_bm25_chunks = json.load(f)
+        else:
+            existing_bm25_chunks = []
+
+        existing_bm25_chunks = [
+        item for item in existing_bm25_chunks
+        if item.get("metadata", {}).get("source") != file_path
+    ]
+
+        all_bm25_chunks = existing_bm25_chunks + new_bm25_chunks
+        
+        with open(BM25_DATA_PATH, "w", encoding="utf-8") as f:
+            json.dump(all_bm25_chunks, f, ensure_ascii=False, indent=2)
+        
+
         texts = [chunk.page_content for chunk in chunks]
         metadatas = [{**chunk.metadata, "text": chunk.page_content} for chunk in chunks]
         ids = [f"{Path(file_path).stem}-{i}" for i in range(len(chunks))]
@@ -115,3 +140,5 @@ def load_vectorstore(uploaded_files):
             progress.update(len(embeddings))
 
         print(f"✅ Upload complete for {file_path}")
+
+

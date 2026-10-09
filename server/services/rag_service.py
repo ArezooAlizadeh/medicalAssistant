@@ -1,21 +1,22 @@
-from modules.hybrid_retriever import retrieve_hybrid_documents
-from modules.reranker import rerank_documents
-from modules.llm import get_llm_chain
+from modules.rag_graph import rag_graph
+
 
 def answer_question(question: str):
-    documents = retrieve_hybrid_documents(question)
-    documents = rerank_documents(question, documents)
-    chain = get_llm_chain()
 
-    result = chain.invoke({
-        "query": question,
-        "documents": documents
+    result = rag_graph.invoke({
+        "original_question": question,
+        "search_query": question
     })
 
+    documents = (
+    result.get("documents", [])
+    if result.get("context_relevant", False)
+    else [])
+
     return {
-    "response": result["result"],
-    "sources": [
-        doc.metadata.get("source", "")
-        for doc in documents
-    ]
-}
+        "response": result.get("answer", ""),
+        "sources": [
+            doc.metadata.get("source", "")
+            for doc in documents
+        ]
+    }

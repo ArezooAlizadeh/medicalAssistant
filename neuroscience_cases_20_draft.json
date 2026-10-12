@@ -1,0 +1,312 @@
+{
+  "dataset_version": "0.3-expanded-draft",
+  "source_file": "/Users/aalizadah/Desktop/What is Neuroscience.pages",
+  "source_sha256": "b650fade84f04222f3d86df7afe0810e3c442a353a1e9a1ac43db9500b4497f1",
+  "scope": "Only the supplied Pages document; not confirmed identical to the PDF indexed in V3. Recheck refusal cases against the full deployed corpus.",
+  "label_policy": "Document-grounded expectations, not independent scientific validation. Section anchors used because exported PDF pagination is unavailable.",
+  "cases": [
+    {
+      "id": "NS001",
+      "category": "direct",
+      "question": "According to the document, what are neurons?",
+      "expected_behavior": "answer",
+      "reference_answer": "Neurons are special cells in the brain that send signals to one another.",
+      "evidence": [
+        {
+          "section": "What is the Brain?",
+          "quote": "The brain is made of special cells called neurons. Neurons are tiny messengers that constantly send signals to each other to create everything you think, feel, and do."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS002",
+      "category": "direct",
+      "question": "According to the document, which molecules are given as examples for MRS?",
+      "expected_behavior": "answer",
+      "reference_answer": "Glutamate and GABA.",
+      "evidence": [
+        {
+          "section": "MRS (Magnetic Resonance Spectroscopy)",
+          "quote": "Scientifically, MRS detects the magnetic signature of specific molecules—like glutamate or GABA—by tuning the scanner to different frequencies."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS003",
+      "category": "direct",
+      "question": "Where does the document say ECoG electrodes are placed?",
+      "expected_behavior": "answer",
+      "reference_answer": "Directly on the surface of the brain during surgery.",
+      "evidence": [
+        {
+          "section": "ECoG (Electrocorticography)",
+          "quote": "Scientifically, it means placing electrodes directly on the brain’s surface during surgery."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS004",
+      "category": "multiple_passages",
+      "question": "According to the document, how do the measured signals in MEG and MRS differ?",
+      "expected_behavior": "answer",
+      "reference_answer": "MEG measures magnetic fields associated with neuronal activity; MRS detects magnetic signatures of specific molecules, such as glutamate or GABA.",
+      "evidence": [
+        {
+          "section": "MEG; MRS",
+          "quote": "MEG measures the tiny magnetic fields created whenever neurons fire."
+        },
+        {
+          "section": "MEG; MRS",
+          "quote": "Scientifically, MRS detects the magnetic signature of specific molecules—like glutamate or GABA—by tuning the scanner to different frequencies."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS005",
+      "category": "unsupported_in_source",
+      "question": "What exact EEG sampling rate in hertz was used in the author’s experiments?",
+      "expected_behavior": "refuse",
+      "reference_answer": "Refuse: this document does not specify that experimental sampling rate.",
+      "evidence": [],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS006",
+      "category": "out_of_domain",
+      "question": "What is the capital of France?",
+      "expected_behavior": "refuse",
+      "reference_answer": "Refuse under the uploaded-evidence-only policy: this document does not provide the answer.",
+      "evidence": [],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS007",
+      "category": "direct",
+      "question": "According to the neuroscience document, what detectors does MEG use to detect tiny magnetic fields?",
+      "expected_behavior": "answer",
+      "reference_answer": "SQUIDs.",
+      "evidence": [
+        {
+          "section": "MEG",
+          "quote": "So MEG uses insanely sensitive detectors called SQUIDs"
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS008",
+      "category": "direct",
+      "question": "According to the document, does fMRI measure neurons directly, and what does it measure instead?",
+      "expected_behavior": "answer",
+      "reference_answer": "It does not measure neurons directly; it measures blood-oxygenation-related changes.",
+      "evidence": [
+        {
+          "section": "fMRI",
+          "quote": "But fun fact—it doesn’t actually measure neurons. Instead, it looks at blood."
+        },
+        {
+          "section": "fMRI",
+          "quote": "fMRI measures those changes by detecting the oxygen levels in hemoglobin"
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS009",
+      "category": "direct",
+      "question": "According to the document, what type of MRI is used for tractography, and what movement does it measure?",
+      "expected_behavior": "answer",
+      "reference_answer": "Diffusion tensor imaging; it measures how water moves inside the brain.",
+      "evidence": [
+        {
+          "section": "Connectomics / Tractography",
+          "quote": "Using a special type of MRI called diffusion tensor imaging. It measures how water moves inside the brain."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS010",
+      "category": "direct",
+      "question": "According to the document, where is the electrode placed in single-cell recording?",
+      "expected_behavior": "answer",
+      "reference_answer": "Near or inside a neuron.",
+      "evidence": [
+        {
+          "section": "Single-Cell Recording",
+          "quote": "Scientists insert a very fine electrode near or inside a neuron, and it picks up the individual spikes."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS011",
+      "category": "direct",
+      "question": "According to the document, what kinds of data does neuroinformatics manage?",
+      "expected_behavior": "answer",
+      "reference_answer": "Data from brain scans, genetics and physiology.",
+      "evidence": [
+        {
+          "section": "Career paths — neuroinformatics",
+          "quote": "Then we have neuroinformatics, which manages massive amounts of data from brain scans, genetics, and physiology."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS012",
+      "category": "direct",
+      "question": "Which backgrounds does the document associate with computational and theoretical neuroscience?",
+      "expected_behavior": "answer",
+      "reference_answer": "Mathematicians, physicists, computer scientists and AI researchers.",
+      "evidence": [
+        {
+          "section": "Career paths — computational neuroscience",
+          "quote": "Mathematicians, physicists, computer scientists, and AI researchers often join forces here to simulate how networks of neurons work."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS013",
+      "category": "direct",
+      "question": "What privacy-related question does the document give as an example in neuroethics?",
+      "expected_behavior": "answer",
+      "reference_answer": "What it means if brain scans can reveal private thoughts.",
+      "evidence": [
+        {
+          "section": "Career paths — neuroethics",
+          "quote": "What does it mean if brain scans can reveal private thoughts?"
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS014",
+      "category": "direct",
+      "question": "According to the document, what makes neurons respond to light in optogenetics?",
+      "expected_behavior": "answer",
+      "reference_answer": "Special light-responsive proteins given to neurons.",
+      "evidence": [
+        {
+          "section": "Optogenetics",
+          "quote": "Here, scientists give neurons special proteins that respond to light."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS015",
+      "category": "multiple_passages",
+      "question": "According to the document, how do calcium imaging and voltage imaging differ in what they track?",
+      "expected_behavior": "answer",
+      "reference_answer": "Calcium imaging uses indicators that glow when calcium enters a neuron; voltage imaging tracks electrical changes directly.",
+      "evidence": [
+        {
+          "section": "Calcium Imaging / Voltage Imaging",
+          "quote": "So scientists use special dyes or genetically engineered proteins that glow whenever calcium enters a neuron (which happens during spikes)."
+        },
+        {
+          "section": "Calcium Imaging / Voltage Imaging",
+          "quote": "Voltage imaging is similar but tracks the actual electrical changes directly."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS016",
+      "category": "multiple_passages",
+      "question": "According to the document, how does the location of EEG sensors differ from ECoG electrodes?",
+      "expected_behavior": "answer",
+      "reference_answer": "EEG sensors are on the scalp; ECoG electrodes are directly on the brain surface during surgery.",
+      "evidence": [
+        {
+          "section": "EEG; ECoG",
+          "quote": "EEG picks up that “electrical chatter” through sensors on your scalp."
+        },
+        {
+          "section": "EEG; ECoG",
+          "quote": "Scientifically, it means placing electrodes directly on the brain’s surface during surgery."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS017",
+      "category": "multiple_passages",
+      "question": "According to the document, how do fMRI and MRS differ in what they measure?",
+      "expected_behavior": "answer",
+      "reference_answer": "fMRI measures blood-oxygenation-related changes; MRS detects signatures of specific molecules such as glutamate or GABA.",
+      "evidence": [
+        {
+          "section": "fMRI; MRS",
+          "quote": "fMRI measures those changes by detecting the oxygen levels in hemoglobin"
+        },
+        {
+          "section": "fMRI; MRS",
+          "quote": "Scientifically, MRS detects the magnetic signature of specific molecules—like glutamate or GABA—by tuning the scanner to different frequencies."
+        }
+      ],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS018",
+      "category": "unsupported_in_source",
+      "question": "What exact MRI field strength in tesla did the author use in her MSc thesis?",
+      "expected_behavior": "refuse",
+      "reference_answer": "State that the supplied neuroscience document does not specify the field strength.",
+      "evidence": [],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS019",
+      "category": "unsupported_in_source",
+      "question": "How many patients participated in the author’s first-year PhD ECoG recordings?",
+      "expected_behavior": "refuse",
+      "reference_answer": "State that the supplied neuroscience document does not specify a patient count.",
+      "evidence": [],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    },
+    {
+      "id": "NS020",
+      "category": "unsupported_in_source",
+      "question": "What manufacturer and model of ECoG recording system did the author use during surgery?",
+      "expected_behavior": "refuse",
+      "reference_answer": "State that the supplied neuroscience document does not specify the manufacturer or model.",
+      "evidence": [],
+      "review_status": "AI-drafted; awaiting user review",
+      "page": null
+    }
+  ],
+  "review_record": {
+    "reviewer": "user",
+    "decision": "Approved the six questions and expected answers in chat",
+    "date": "2026-10-09",
+    "scope": "Approval covers NS001–NS006 only. NS007–NS020 await user review."
+  },
+  "purpose": "Development evaluation, not held-out testing; includes targeted cases informed by earlier findings.",
+  "expansion_note": "20 cases from one source do not meet the eventual 50–100-case, multiple-document expansion target. Refusal labels are source-specific and need full-corpus checking."
+}

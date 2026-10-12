@@ -1,0 +1,99 @@
+{
+  "dataset_version": "0.2-user-reviewed",
+  "source_file": "/Users/aalizadah/Desktop/What is Neuroscience.pages",
+  "source_sha256": "b650fade84f04222f3d86df7afe0810e3c442a353a1e9a1ac43db9500b4497f1",
+  "scope": "Only the supplied Pages document; not confirmed identical to the PDF indexed in V3. Recheck refusal cases against the full deployed corpus.",
+  "label_policy": "Document-grounded expectations, not independent scientific validation. Section anchors used because exported PDF pagination is unavailable.",
+  "cases": [
+    {
+      "id": "NS001",
+      "category": "direct",
+      "question": "According to the document, what are neurons?",
+      "expected_behavior": "answer",
+      "reference_answer": "Neurons are special cells in the brain that send signals to one another.",
+      "evidence": [
+        {
+          "section": "What is the Brain?",
+          "quote": "The brain is made of special cells called neurons. Neurons are tiny messengers that constantly send signals to each other to create everything you think, feel, and do."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS002",
+      "category": "direct",
+      "question": "According to the document, which molecules are given as examples for MRS?",
+      "expected_behavior": "answer",
+      "reference_answer": "Glutamate and GABA.",
+      "evidence": [
+        {
+          "section": "MRS (Magnetic Resonance Spectroscopy)",
+          "quote": "Scientifically, MRS detects the magnetic signature of specific molecules—like glutamate or GABA—by tuning the scanner to different frequencies."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS003",
+      "category": "direct",
+      "question": "Where does the document say ECoG electrodes are placed?",
+      "expected_behavior": "answer",
+      "reference_answer": "Directly on the surface of the brain during surgery.",
+      "evidence": [
+        {
+          "section": "ECoG (Electrocorticography)",
+          "quote": "Scientifically, it means placing electrodes directly on the brain’s surface during surgery."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS004",
+      "category": "multiple_passages",
+      "question": "According to the document, how do the measured signals in MEG and MRS differ?",
+      "expected_behavior": "answer",
+      "reference_answer": "MEG measures magnetic fields associated with neuronal activity; MRS detects magnetic signatures of specific molecules, such as glutamate or GABA.",
+      "evidence": [
+        {
+          "section": "MEG; MRS",
+          "quote": "MEG measures the tiny magnetic fields created whenever neurons fire."
+        },
+        {
+          "section": "MEG; MRS",
+          "quote": "Scientifically, MRS detects the magnetic signature of specific molecules—like glutamate or GABA—by tuning the scanner to different frequencies."
+        }
+      ],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS005",
+      "category": "unsupported_in_source",
+      "question": "What exact EEG sampling rate in hertz was used in the author’s experiments?",
+      "expected_behavior": "refuse",
+      "reference_answer": "Refuse: this document does not specify that experimental sampling rate.",
+      "evidence": [],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    },
+    {
+      "id": "NS006",
+      "category": "out_of_domain",
+      "question": "What is the capital of France?",
+      "expected_behavior": "refuse",
+      "reference_answer": "Refuse under the uploaded-evidence-only policy: this document does not provide the answer.",
+      "evidence": [],
+      "review_status": "AI-drafted; user-reviewed and approved",
+      "page": null
+    }
+  ],
+  "review_record": {
+    "reviewer": "user",
+    "decision": "Approved the six questions and expected answers in chat",
+    "date": "2026-10-09",
+    "scope": "Supplied Pages document only; equivalence to indexed PDF and full-corpus refusal labels remain unverified"
+  }
+}
